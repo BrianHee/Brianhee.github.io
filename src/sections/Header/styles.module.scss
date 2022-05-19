@@ -6,5 +6,12 @@
     justify-content: center;
     align-items: center;
     height: calc(30vw + 23rem);
-    background-color: colors.$mimipink;
+    background-color: colors.$primary;
+}
+
+.links {
+    img {
+        height: calc(2vw + 0.25rem);
+        margin: 1rem 0.5rem;
+    }
 }
