@@ -1,0 +1,10 @@
+@use '../../styles/colors.scss';
+
+.container {
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    height: calc(30vw + 23rem);
+    background-color: colors.$mimipink;
+}
