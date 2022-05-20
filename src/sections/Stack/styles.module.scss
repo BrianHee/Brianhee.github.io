@@ -1,0 +1,21 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        margin-bottom: 1rem;
+    }
+}
+
+.stack {
+    img {
+        height: calc(3vw + 3rem);
+        transition: 0.5s;
+
+        &:hover {
+            transform: scale(1.1);
+        }
+    }
+}

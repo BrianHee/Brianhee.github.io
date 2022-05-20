@@ -2,7 +2,31 @@
 
 .container {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: colors.$primary;
+}
+
+.about {
+    margin-top: 2rem;
+    margin-bottom: 17rem;
+    width: 40%;
+    text-align: center;
+    font-size: calc(1vw + 0.25rem);
+    opacity: 0;
+}
+
+.animation {
+    animation: fadeIn both 1s;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(2rem);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }

@@ -5,8 +5,21 @@
     flex-flow: column;
     justify-content: center;
     align-items: center;
-    height: calc(30vw + 23rem);
+    height: calc(10vw + 20rem);
     background-color: colors.$primary;
+
+    h1 {
+        margin: 0.5rem;
+        margin-top: auto;
+        animation: fadeIn 1s both;
+        overflow: hidden;
+    }
+
+    h2 {
+        margin: 0.5rem;
+        animation: fadeIn 1s both;
+        overflow: hidden;
+    }
 }
 
 .links {
@@ -18,5 +31,15 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+}
+
+
+@keyframes fadeIn {
+    0% {
+        line-height: 0%;
+    }
+    100%{
+        line-height: 100%;
     }
 }
