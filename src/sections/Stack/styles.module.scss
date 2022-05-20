@@ -22,3 +22,27 @@
         }
     }
 }
+
+.animate {
+    img {
+     animation: bounce 0.75s ease-in-out;
+    } 
+}
+
+@for $i from 1 through 5 {
+    .animate a:nth-child(#{$i}) {
+        img {
+         animation-delay: #{$i * 0.1}s;
+        }
+    }
+}
+
+@keyframes bounce {
+    50% {
+        transform: translateY(-1rem);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
