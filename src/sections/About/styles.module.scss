@@ -3,20 +3,18 @@
 .container {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    height: calc(20vw + 3rem);
 }
 
 .about {
     margin-top: 2rem;
-    margin-bottom: 17rem;
-    width: 40%;
+    width: calc(20vw + 15rem);
     text-align: center;
-    font-size: calc(1vw + 0.25rem);
     opacity: 0;
 }
 
-.animation {
+.animate {
     animation: fadeIn both 1s;
 }
 

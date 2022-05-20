@@ -1,20 +1,18 @@
-.container {
+.container{
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-     margin-bottom: 5rem;
-
+    justify-content: center;
 
     h2 {
         margin-bottom: 3rem;
     }
 }
 
-.stack {
+.wrapper {
     img {
         height: calc(3vw + 3rem);
-        margin: 0 2rem;
+        margin: 2rem;
         transition: 0.5s;
 
         &:hover {

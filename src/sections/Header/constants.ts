@@ -1,5 +1,6 @@
 import email from '../../assets/email.svg';
 import git from '../../assets/git.svg';
+import resume from '../../assets/resume.svg';
 
 interface Socials {
     logo: string;
@@ -7,6 +8,10 @@ interface Socials {
 }
 
 const SOCIALS: Socials[] = [
+    {
+        logo: resume,
+        href: '/'
+    },
     {
         logo: email,
         href: 'mailto:brian.hees.kim@gmail.com'

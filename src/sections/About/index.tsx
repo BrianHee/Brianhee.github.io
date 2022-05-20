@@ -1,29 +1,33 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 import styles from './styles.module.scss';
 
 const About: React.FunctionComponent = () => {
     const aboutRef = useRef<HTMLDivElement>(null);
+	const [scrolled, setScrolled] = useState<boolean>(false)
 
-    const observer = new IntersectionObserver(
-		(entries) => {
-			entries.forEach((entry) => {
-				if (entry.isIntersecting) {
-					entry.target.classList.add(styles.animation);
-					observer.unobserve(entry.target);
-					return;
-				}
-			});
-		},
-		{ rootMargin: '-40% 0% -40% 0%' }
-	);
+	const windowScroll = () => {
+		let mouseY = window.scrollY;
+		if (mouseY > 50) {
+			setScrolled(true);
+		}
+	};
 
-    useEffect(() => {
-        if (aboutRef) {observer.observe(aboutRef.current as Element)}
-    }, [aboutRef])
+	window.addEventListener('scroll', windowScroll);
+
+	useEffect(() => {
+		if (scrolled) {
+			aboutRef.current!.classList.add(styles.animate);
+			console.log('class added');
+		}
+	}, [scrolled])
+
+	useEffect(() => {
+		console.log(scrolled)
+	}, [scrolled])
 
     return <div className={styles.container}>
         <div className={styles.about} ref={aboutRef}>
-            <h3>I am a self-taught developer who enjoys tackling challenging problems and learning new technologies</h3>
+			<h3>I am a self-taught developer who enjoys tackling challenging problems and learning new technologies</h3>
         </div>
     </div>
 }
