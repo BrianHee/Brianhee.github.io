@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss';
+
 .container{
     display: flex;
     flex-direction: column;
@@ -5,7 +7,7 @@
     justify-content: center;
 
     h2 {
-        margin-bottom: 3rem;
+        margin-bottom: 5rem;
     }
 }
 
@@ -18,5 +20,78 @@
         &:hover {
             transform: scale(1.1);
         }
+    }
+}
+
+
+.project-wrapper {
+    display: flex;
+}
+
+.terminal {
+    width: 0;
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 1s;
+
+    .terminal-tab {
+        display: flex;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+        background-color: colors.$gray;
+
+        div {
+            width: 0.75rem;
+            height: 0.75rem;
+            margin: 0.25rem;
+            border-radius: 50%;
+        }
+
+        .red {
+            background-color: #DF5E47;
+        }
+
+        .yellow {
+            background-color: #FFC34D;
+        }
+
+        .green {
+            background-color: #4DFF63;
+        }
+    }
+
+    .terminal-window{
+        padding: 2rem 1rem;
+        background-color: colors.$deepspacesparkle;
+        color: white;
+    }
+}
+
+.open {
+    animation: grow 1s both;
+    margin-left: 5rem;
+}
+
+.close {
+    animation: shrink 1s both;
+}
+
+@keyframes grow {
+    0% {
+        width: 0;
+    }
+
+    100% {
+        width: calc(20vw + 20rem);
+    }
+}
+
+@keyframes shrink {
+    0% {
+        width: calc(20vw + 20rem);
+    }
+
+    100% {
+        width: 0;
     }
 }

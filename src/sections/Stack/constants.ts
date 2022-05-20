@@ -26,6 +26,11 @@ const STACK: Stack[] = [
         href: 'https://expressjs.com/'
     },
     {
+        logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg',
+        alt: 'mongodb',
+        href: 'https://mongodb.com/'
+    },
+    {
         logo: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg',
         alt: 'sass',
         href: 'https://sass-lang.com/'

@@ -11,13 +11,14 @@
     h1 {
         margin: 0.5rem;
         margin-top: auto;
-        animation: fadeIn 1.5s both;
+        animation: fadeIn 1s both;
         overflow: hidden;
     }
 
     h2 {
         margin: 0.5rem;
-        animation: fadeIn 1.5s both;
+        animation: fadeIn 1s both;
+        animation-delay: 0.75s;
         overflow: hidden;
     }
 }
