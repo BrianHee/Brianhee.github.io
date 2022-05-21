@@ -10,7 +10,7 @@ interface Socials {
 const SOCIALS: Socials[] = [
     {
         logo: resume,
-        href: '/'
+        href: '/resume.pdf'
     },
     {
         logo: email,
