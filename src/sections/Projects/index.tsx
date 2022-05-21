@@ -1,6 +1,8 @@
 import React, { useEffect } from 'react';
 import PROJECTS from './constants';
 import styles from './styles.module.scss';
+import link from '../../assets/link.svg';
+import githubw from '../../assets/githubw.svg';
 
 const Projects: React.FunctionComponent = () => {
     const observer = new IntersectionObserver(
@@ -45,6 +47,10 @@ const Projects: React.FunctionComponent = () => {
                             <h4>{'>'} {project.title}</h4>
                             <h4 className={styles.string}>"{project.description}"</h4>
                             <h4 className={styles.array}>[{project.stack.join(', ')}]</h4>
+                            <div className={styles.links}>
+                                <a href={project.href}><img src={link} alt='link' /> Demo</a>
+                                <a href={project.github}><img src={githubw} alt='github' /> Source</a>
+                            </div>
                             <h4>{'> '}<div className={styles.cursor}></div></h4>
                         </div>
                     </div>

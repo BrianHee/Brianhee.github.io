@@ -1,3 +1,5 @@
+@use '../../styles/colors.scss';
+
 .container {
     display: flex;
     flex-direction: column;
@@ -12,6 +14,8 @@
 }
 
 .stack {
+    text-align: center;
+    
     img {
         height: calc(3vw + 3rem);
         margin: 0 2rem;
