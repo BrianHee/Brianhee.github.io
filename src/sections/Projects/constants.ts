@@ -13,7 +13,7 @@ const PROJECTS: Project[] = [
         title: 'courseshare',
         href:'https://courseshareapp.com',
         logo: courseshare,
-        description: 'courseshare is an intuitive course building platform for the internet',
+        description: 'an intuitive course building platform for the internet',
         stack: ['TypeScript', 'ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB']
     }    
 ];

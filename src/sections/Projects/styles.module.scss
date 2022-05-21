@@ -26,6 +26,7 @@
 
 .project-wrapper {
     display: flex;
+    align-items: center;
 }
 
 .terminal {
@@ -62,8 +63,27 @@
 
     .terminal-window{
         padding: 2rem 1rem;
+        border-bottom-left-radius: 5px;
+        border-bottom-right-radius: 5px;
         background-color: colors.$deepspacesparkle;
         color: white;
+        line-height: 2rem;
+
+        .string {
+            color: #FFBD80;
+        }
+
+        .array {
+            color: #80FF8C;
+        }
+
+        .cursor {
+            display: inline-block;
+            width: 10px;
+            height: 14px;
+            background-color: white;
+            animation: blink 1s infinite steps(2);
+        }
     }
 }
 
@@ -93,5 +113,17 @@
 
     100% {
         width: 0;
+    }
+}
+
+@keyframes blink {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0;
+    }
+    51% {
+        opacity: 1;
     }
 }

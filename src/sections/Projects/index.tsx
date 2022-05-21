@@ -7,12 +7,12 @@ const Projects: React.FunctionComponent = () => {
 		(entries) => {
 			entries.forEach((entry) => {
 				if (entry.isIntersecting) {
-					entry.target.classList.toggle(styles.open);
-                    entry.target.classList.toggle(styles.close);
+					entry.target.classList.add(styles.open);
+                    entry.target.classList.remove(styles.close);
 					return;
 				} else {
-                    entry.target.classList.toggle(styles.open);
-                    entry.target.classList.toggle(styles.close);
+                    entry.target.classList.remove(styles.open);
+                    entry.target.classList.add(styles.close);
                     return;
                 }
 			});
@@ -42,7 +42,10 @@ const Projects: React.FunctionComponent = () => {
                             <div className={styles.green}></div>
                         </div>
                         <div className={styles['terminal-window']}>
-                            {'>'} {project.description}
+                            <h4>{'>'} {project.title}</h4>
+                            <h4 className={styles.string}>"{project.description}"</h4>
+                            <h4 className={styles.array}>[{project.stack.join(', ')}]</h4>
+                            <h4>{'> '}<div className={styles.cursor}></div></h4>
                         </div>
                     </div>
                 </div>
