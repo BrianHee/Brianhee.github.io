@@ -120,7 +120,7 @@
 
 .open {
     animation: grow 1s both;
-    margin-left: 5rem;
+    margin-left: calc(5vw + 0.5rem);
 }
 
 .close {
@@ -133,13 +133,13 @@
     }
 
     100% {
-        width: calc(20vw + 20rem);
+        width: calc(30vw + 20rem);
     }
 }
 
 @keyframes shrink {
     0% {
-        width: calc(20vw + 20rem);
+        width: calc(30vw + 20rem);
     }
 
     100% {
@@ -156,5 +156,27 @@
     }
     51% {
         opacity: 1;
+    }
+}
+
+@media screen and (max-width: 850px) {
+    .project-wrapper {
+        flex-direction: column;
+
+        .terminal {
+            white-space: pre-wrap;
+            max-width: calc(50vw + 6.5rem);
+
+            .terminal-window {
+                height: calc(30rem - 40vw);
+
+                .links {
+                    a {
+                        gap: 0;
+                        padding: 0 0.25rem;
+                    }
+                }
+            }
+        }
     }
 }
