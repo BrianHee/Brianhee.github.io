@@ -27,7 +27,8 @@ const About: React.FunctionComponent = () => {
 
     return <div className={styles.container}>
         <div className={styles.about} ref={aboutRef}>
-			<h3>I am a self-taught developer who enjoys tackling challenging problems and learning new technologies</h3>
+			<h3>I am a highly motivated, self-taught developer who enjoys
+				 working in challenging environments and learning new technologies</h3>
         </div>
     </div>
 }
