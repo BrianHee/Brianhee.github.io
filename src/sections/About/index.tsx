@@ -17,12 +17,7 @@ const About: React.FunctionComponent = () => {
 	useEffect(() => {
 		if (scrolled) {
 			aboutRef.current!.classList.add(styles.animate);
-			console.log('class added');
 		}
-	}, [scrolled])
-
-	useEffect(() => {
-		console.log(scrolled)
 	}, [scrolled])
 
     return <div className={styles.container}>

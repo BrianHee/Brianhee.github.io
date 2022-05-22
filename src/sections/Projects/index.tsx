@@ -19,7 +19,7 @@ const Projects: React.FunctionComponent = () => {
                 }
 			});
 		},
-		{ rootMargin: '-40% 0% -40% 0%' }
+		{ rootMargin: '-50% 0% -50% 0%' }
 	);
 
 

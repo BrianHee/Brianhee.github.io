@@ -15,7 +15,7 @@ const Stack: React.FunctionComponent = () => {
 				}
 			});
 		},
-		{ rootMargin: '-20% 0% -20% 0%' }
+		{ rootMargin: '-30% 0% -30% 0%' }
 	);
 
 
