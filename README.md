@@ -26,4 +26,4 @@ yarn install
 
 # 📟 Tech Stack
 
-<p align='center'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css' width='150' /></p>
+<p align='center'><img src='https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg' width='150' /></p>
