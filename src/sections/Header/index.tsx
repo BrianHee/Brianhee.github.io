@@ -6,7 +6,7 @@ import SOCIALS from './constants';
 const Header: React.FunctionComponent = () => {
     return <div className={styles.container}>
         <h1>brian kim</h1>
-        <h2>full stack developer</h2>
+        <h2>web developer</h2>
         <div className={styles.links}>
             {SOCIALS.map((social, idx) => (
                 <a href={social.href} key={idx}>
