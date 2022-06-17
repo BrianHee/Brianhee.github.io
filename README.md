@@ -1,8 +1,8 @@
-<p align='center'><img src='https://brianhee.github.io/favicon.ico' width='150' /></p>
+<p align='center'><img src='https://brianhee.github.io/favicon.ico' width='200' /></p>
 
 # 🤔 About
 
-This is the repository for my portfolio site.
+This is the repository for the code for my portfolio site.
 
 # 🧑‍💻 Live Site
 
@@ -10,7 +10,7 @@ For the live site, please visit the following link: [BrianHee](https://brianhee.
 
 # ✍️ Cloning the Repo
 
-To clone the repository for this portfolio, run the following in the directory of choice:
+To clone the repository for this code, run the following in the directory of choice:
 
 ```
 git clone https://github.com/BrianHee/brianhee.github.io
