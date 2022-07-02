@@ -24,7 +24,7 @@ const Stack: React.FunctionComponent = () => {
     }, []);
 
     return <div className={styles.container}>
-        <h2>my current tech stack</h2>
+        <h2>my tech stack</h2>
         <div className={styles.stack} ref={stackRef}>
         {STACK.map((tech, idx) => (
             <a href={tech.href} key={idx}>
