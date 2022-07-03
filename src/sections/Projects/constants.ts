@@ -17,7 +17,7 @@ const PROJECTS: Project[] = [
         github: 'https://github.com/BrianHee/courseshare',
         logo: courseshare,
         description: 'an intuitive course building platform for the internet',
-        stack: ['TypeScript', 'ReactJS', 'NodeJS', 'ExpressJS', 'MongoDB']
+        stack: ['TypeScript', 'React', 'NodeJS', 'Express', 'MongoDB']
     },
     {
         title: 'contrast',
