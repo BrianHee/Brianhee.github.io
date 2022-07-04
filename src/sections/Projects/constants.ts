@@ -24,7 +24,7 @@ const PROJECTS: Project[] = [
         href: 'https://contrast.herokuapp.com',
         github: 'https://github.com/BrianHee/contrast-diffchecker',
         logo: contrast,
-        description: 'a tool to visualize textual differences between two samples of text',
+        description: 'a visualization tool for textual differences between two samples of text',
         stack: ['React']
     }  
 ];
