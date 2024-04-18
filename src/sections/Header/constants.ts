@@ -5,20 +5,24 @@ import resume from '../../assets/resume.svg';
 interface Socials {
     logo: string;
     href: string;
+    alt: string;
 }
 
 const SOCIALS: Socials[] = [
     {
         logo: resume,
-        href: '/resume.pdf'
+        href: '/resume.pdf',
+        alt: 'resume'
     },
     {
         logo: email,
-        href: 'mailto:brian.hees.kim@gmail.com'
+        href: 'mailto:brian.hees.kim@gmail.com',
+        alt: 'email'
     },
     {
         logo: git,
-        href: 'https://github.com/BrianHee'
+        href: 'https://github.com/BrianHee',
+        alt: 'git'
     }
 ]
 

@@ -27,7 +27,7 @@ const Projects: React.FunctionComponent = () => {
 		for (let i = 0; i < PROJECTS.length; i++) {
             observer.observe(document.getElementById(`project-${i}`)!);
         }
-    }, []);
+    });
 
     return <div className={styles.container}>
         <h2>my projects</h2>

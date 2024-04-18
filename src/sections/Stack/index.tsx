@@ -21,7 +21,7 @@ const Stack: React.FunctionComponent = () => {
 
 	useEffect(() => {
 		observer.observe(stackRef.current!)
-    }, []);
+    });
 
     return <div className={styles.container}>
         <h2>my tech stack</h2>

@@ -10,7 +10,7 @@ const Header: React.FunctionComponent = () => {
         <div className={styles.links}>
             {SOCIALS.map((social, idx) => (
                 <a href={social.href} key={idx}>
-                    <img src={social.logo}/>
+                    <img src={social.logo} alt={social.alt}/>
                 </a>
             ))}
         </div>
