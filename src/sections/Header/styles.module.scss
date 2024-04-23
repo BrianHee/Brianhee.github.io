@@ -2,12 +2,13 @@
 
 .container {
     display: flex;
-    flex-flow: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    height: calc(10vw + 20rem);
+    height: calc(25vw + 20rem);
     background-color: colors.$primary;
+    gap: 5%;
+    text-align: right;
 
     h1 {
         margin: 0.5rem;
@@ -36,6 +37,22 @@
     }
 }
 
+.portrait-container {
+    animation: 1s fadeInDiv both;
+    overflow: hidden;
+    .portrait-background {
+        height: calc(5vw + 10rem);
+        width: calc(5vw + 10rem);
+        background-color: colors.$richblack;
+        border-radius: 50%;
+        background-image: url('../../assets/portrait.svg');
+        background-repeat: no-repeat;
+        background-size: 90% 90%;
+        background-position: 50% 200%;
+        animation: 2s fadeInPortrait forwards;
+    }
+}
+
 
 @keyframes fadeIn {
     0% {
@@ -43,5 +60,23 @@
     }
     100%{
         line-height: 100%;
+    }
+}
+
+@keyframes fadeInDiv {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: calc(5vw + 10rem);
+    }
+}
+
+@keyframes fadeInPortrait {
+    0% {
+        background-position: 50% 5000%;
+    }
+    100% {
+        background-position: 50% 200%;
     }
 }
