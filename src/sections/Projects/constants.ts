@@ -21,7 +21,7 @@ const PROJECTS: Project[] = [
     },
     {
         title: 'contrast',
-        href: 'https://contrast.herokuapp.com',
+        href: 'https://contrastdiff.netlify.app/',
         github: 'https://github.com/BrianHee/contrast-diffchecker',
         logo: contrast,
         description: 'a tool for visualizing textual differences between two samples of text',

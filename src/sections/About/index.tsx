@@ -20,10 +20,11 @@ const About: React.FunctionComponent = () => {
 		}
 	}, [scrolled])
 
+	const aboutText = 'i love collecting, analyzing, and visualizing data';
+
     return <div className={styles.container}>
         <div className={styles.about} ref={aboutRef}>
-			<h3>I am a highly motivated, self-taught developer who enjoys
-				 working in challenging environments and learning new technologies</h3>
+					<h3>{aboutText}</h3>
         </div>
     </div>
 }
