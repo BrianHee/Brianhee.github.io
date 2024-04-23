@@ -13,8 +13,8 @@ const Experience: React.FunctionComponent = () => {
                         <img src={job.logo} alt={job.company} />
                         <div className={styles['job-description']}>
                             <h3>{job.company}</h3>
-                            <h4>{job.title}</h4>
-                            <h4>{job.dates}</h4>
+                            <p>{job.title}</p>
+                            <p>{job.dates}</p>
                         </div>
                     </div>
                 ))}
