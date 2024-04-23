@@ -20,7 +20,7 @@ const About: React.FunctionComponent = () => {
 		}
 	}, [scrolled])
 
-	const aboutText = 'i love collecting, analyzing, and visualizing data';
+	const aboutText = 'avid data enthusiast - i love collecting, analyzing, and visualizing data.';
 
     return <div className={styles.container}>
         <div className={styles.about} ref={aboutRef}>

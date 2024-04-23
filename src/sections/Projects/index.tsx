@@ -49,7 +49,7 @@ const Projects: React.FunctionComponent = () => {
                             <h4 className={styles.array}>[{project.stack.join(', ')}]</h4>
                             <div className={styles.links}>
                                 <a href={project.href}><img src={link} alt='link' /> Demo</a>
-                                <a href={project.github}><img src={githubw} alt='github' /> Source</a>
+                                {project.github && <a href={project.github}><img src={githubw} alt='github' /> Source</a>}
                             </div>
                             <h4>{'> '}<div className={styles.cursor}></div></h4>
                         </div>

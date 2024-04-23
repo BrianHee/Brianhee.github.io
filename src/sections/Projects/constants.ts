@@ -1,5 +1,6 @@
 import courseshare from '../../assets/courseshare.svg';
 import contrast from '../../assets/contrast.svg';
+import centiment from '../../assets/centiment.svg';
 
 interface Project {
     title: string;
@@ -12,11 +13,19 @@ interface Project {
 
 const PROJECTS: Project[] = [
     {
+        title: 'centiment',
+        href:'https://centiment.fyi',
+        github: '',
+        logo: centiment,
+        description: 'analytics dashboard that visualizes market sentiment',
+        stack: ['TypeScript', 'React', 'Next.js', 'Spring Boot', 'PostgreSQL']
+    },
+    {
         title: 'courseshare',
         href:'https://courseshareapp.com',
         github: 'https://github.com/BrianHee/courseshare',
         logo: courseshare,
-        description: 'an intuitive course building platform for the internet',
+        description: 'an intuitive course building and distributing platform for the internet',
         stack: ['TypeScript', 'React', 'NodeJS', 'Express', 'MongoDB']
     },
     {
