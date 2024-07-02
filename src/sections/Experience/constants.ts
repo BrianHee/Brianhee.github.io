@@ -18,7 +18,7 @@ const EXPERIENCE: Experience[] = [
     {
         company: 'Yale School of Medicine',
         logo: yale,
-        dates: 'Sept 2019 - Aug 2021',
+        dates: 'Aug 2019 - Sept 2021',
         title: 'Research Associate'
     }
 ]
